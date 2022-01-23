@@ -1,0 +1,259 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Variables */
+:root {
+    /* Fonts */
+    --font-color: #fff;
+    --font-main: 'Poppins', sans-serif;
+    --font-size-normal: 1.2rem;
+    --font-size-large: 2.2rem;
+    --font-size-small: 1rem;
+
+    /* Colors */
+    --bg-main-color: #222;
+    --bg-main-color-dark: #121212;
+    --bg-sec-color: #221332;
+    --overlay-op: rgba(0, 0, 0, 0.5);
+    --overlay-op-2: rgba(0, 0, 0, 0.8);
+
+    /* Buttons */
+    --btn-color: #1198db;
+    --btn-hov: #0e83be;
+    --btn-active: #00d084;
+}
+
+/* Reset and general style */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--font-color);
+    background-color: var(--bg-main-color-dark);
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    margin: 2rem 0;
+    font-size: var(--font-size-large);
+}
+
+p {
+    margin: 1rem 0;
+    font-size: var(--font-size-normal);
+}
+
+a {
+    color: var(--font-color);
+}
+
+
+/* Header */
+h1 {
+    display: none;
+}
+
+div.logo-full {
+    width: 50%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+header {
+    background-image: url(img/elliot-bg.png);
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+div.fullscreen {
+    background-color: var(--overlay-op);
+    height: 900px;
+}
+
+
+/* Sticky nav */
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--bg-main-color);
+    max-height: 100px;
+    z-index: 1000;
+    box-shadow: 0 8px 8px var(--overlay-op);
+
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    margin-left: 5rem;
+}
+
+div.logo img{
+    height: 100px;
+}
+
+div.right {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5rem;
+}
+
+.social {
+    margin-left: 3rem;
+}
+
+.right a {
+    margin: .5rem;
+    opacity: 0.8;
+}
+
+.right a:hover {
+    opacity: 1;
+}
+
+.right img {
+    width: 64px;
+}
+
+/*   ### MAIN ###   */
+main {
+    width: 80%;
+    margin: auto;
+}
+
+/* All sections */
+div.intro, div.news, div.trailer {
+    margin: 4rem 0;
+}
+
+div.title {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+/* Section intro */
+div.card-hl {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-bottom: 2rem;
+}
+
+div.card-hl .img {
+    width: 40%;
+    max-width: 700px;
+}
+
+div.card-hl .img > img {
+    border-radius: 8px;
+}
+
+div.card-hl .text {
+    width: 40%;
+}
+
+/* Section Newns and Updates */
+div.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#n1, #n2, #n3, #n4, #n5, #n6 {
+    display: none;
+}
+
+#n7, #n8, #n9, #n10 {
+    background-image: url(img/hero-banner.png);
+}
+
+div.card-vl {
+    background-size: cover;
+    background-position: bottom;
+
+    position: relative;
+    width: 580px;
+    height: 380px;
+
+    overflow: hidden;
+
+    border-radius: 6px;
+    margin: 1rem 2rem;
+}
+
+div.card-vl .texto {
+    background-color: var(--overlay-op);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    padding: 0 2rem;
+
+    transition: 0.5s;
+}
+
+div.card-vl:hover .texto {
+    background-color: var(--overlay-op-2);
+}
+
+div.card-vl .texto h2 {
+    margin: 0.5rem 0;
+    font-size: var(--font-size-normal);
+    transition: 0.5s;
+}
+
+div.card-vl:hover h2 {
+    color: var(--btn-color)
+}
+
+div.card-vl .texto p {
+    margin: 0.5rem 0;
+    font-size: var(--font-size-small);
+}
+
+.more {
+    margin: auto;
+    text-align: center;
+
+}
+
+.more button {
+    background-color: transparent;
+    border: none;
+
+    color: var(--font-color);
+}
+
+.more button span {
+    font-size: 6rem;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.more button span:hover {
+    opacity: 1;
+    color: var(--btn-color);
+    transform-origin: center center;
+    transform: scale(1.2);
+}
+
+/* Section trailer */
+div.video {
+    text-align: center;
+    transform: scale(0.8);
+}
