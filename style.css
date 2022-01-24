@@ -151,7 +151,7 @@ div.intro, div.intro ~ div {
 div.title {
     width: 50%;
     min-width: 500px;
-    max-width: 600px;
+    max-width: 680px;
     margin: auto;
     margin-bottom: 1rem;
 }
@@ -198,8 +198,7 @@ div.card-hl {
 }
 
 div.card-hl .img {
-    width: 40%;
-    max-width: 700px;
+    width: 43%;
     min-width: 500px;
 }
 
@@ -224,8 +223,45 @@ div.gallery {
     display: none;
 }
 
-#n7, #n8, #n9, #n10 {
-    background-image: url(img/hero-banner.png);
+/* News images */
+#n10 {
+    background-image: url(img/news/aniversario_new_10.png);
+}
+
+#n9 {
+    background-image: url(img/news/japan_new_9.jpg);
+}
+
+#n8 {
+    background-image: url(img/news/lunaryear_new_8.png);
+}
+
+#n7 {
+    background-image: url(img/news/consoles_new_7.png);
+}
+
+#n6 {
+    background-image: url(img/news/wintersale_new_6.png);
+}
+
+#n5 {
+    background-image: url(img/news/awards_new_5.png);
+}
+
+#n4 {
+    background-image: url(img/news/sale_new_4.png);
+}
+
+#n3 {
+    background-image: url(img/news/calila_new_3.png);
+}
+
+#n2 {
+    background-image: url(img/news/soundtrack_new_2.png);
+}
+
+#n1 {
+    background-image: url(img/news/assistmode_new_1.png);
 }
 
 div.card-vl {
@@ -233,8 +269,8 @@ div.card-vl {
     background-position: bottom;
 
     position: relative;
-    width: 580px;
-    height: 380px;
+    width: 640px;
+    height: 360px;
 
     overflow: hidden;
 
@@ -327,13 +363,13 @@ div#soundtrack {
 }
 
 figure {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 figure img {
     width: 50%;
     min-width: 400px;
-    max-width: 500px;
+    max-width: 650px;
     transition: ease-out 0.1s;
 }
 
@@ -351,9 +387,9 @@ div.audio {
 }
 
 audio {
-    width: 50%;
+    width: 60%;
     min-width: 500px;
-    max-width: 600px;
+    max-width: 750px;
 }
 
 /* Section Available On */
@@ -361,24 +397,112 @@ div#available-on div:not([class]) {
     background-image: url(img/availableon-banner.png);
     background-size: cover;
     background-position: bottom;
+    width: 60%;
+    height: 65vh;
+    margin: auto;
+    border-radius: 16px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-div#available-on div:nth-child
+div#available-on div:not([class]) img {
+    width: 180px;
+    margin: 0 1.5rem;
+}
 
+div#available-on div:not([class]) a {
+    transition: 0.3s;
+}
 
+div#available-on div:not([class]) a:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
 
 /* Section Screenshots */
+div#screenshots {
+    text-align: center;
+}
 
 /* Section Press Kit */
+div#presskit {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
 
+div#presskit .img {
+    width: 60%;
+    max-width: 260px;
+    margin: auto;
+}
+
+span {
+    color: var(--btn-color);
+    padding: 0 1rem;
+}
 /* Section Unity Banner */
+div.banner-unity {
+    background-image: url(img/unity-banner.png);
+    background-position: center;
+    background-size: cover;
+
+    height: 50vh;
+    position: relative;
+    margin-bottom: initial;
+}
+
+div.banner-unity h2 {
+    font-size: var(--font-size-large);
+    font-weight: 400;
+    margin: 3rem;
+}
+
+div.banner-unity > h2 {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+
+}
+
+div.banner-unity > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 26%;
+    top: 40%;
+}
+
+div.banner-unity img {
+    width: 500px;
+}
 
 /* Section About Us */
 div#about-us {
     background-color: var(--bg-sec-color);
     margin-top: 4rem;
     margin-bottom: 0;
+
+    padding: 5rem 0;
 }
+
+.logo-studio {
+    width: 40%;
+    margin: auto;
+}
+
+div#about-us > div.content {
+    width: 80%;
+    margin: auto;
+}
+
+
 
 /* FOOTER */
 footer {
