@@ -1,0 +1,148 @@
+/* 
+
+    ##########     MEDIA QUERY     ##########
+
+*/
+/*@media (min-width: 901px) and (max-width: 1200px) {
+    div.fullscreen {
+        height: 80vh;
+    }
+
+    div.logo-full {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    div.title {
+        width: 70%;
+    }
+}*/
+
+
+@media (max-width: 900px) {
+    /* Header */
+    div.fullscreen {
+        height: 50vh;
+    }
+
+    div.logo-full {
+        min-width: none !important;
+        width: 90%;
+        padding-top: 0;
+    }
+
+    /* Sticky nav */
+    nav.main-nav {
+        display: none;
+    }
+
+    nav.dropdown-nav {
+        display: flex;
+    }
+
+    /*   ### MAIN ###   */
+    /* All sections */
+    div.title {
+        width: 90%;
+    }
+
+    /* Section intro */
+    div.intro {
+        width: 90%;
+    }
+
+    div.intro div.card-hl .img, div.intro div.card-hl .text {
+        min-width: none !important;
+        width: 100%;
+    }
+
+    /* Section News and Updates */
+    div.card-vl {
+        /*  P E N D I E N T E  */
+        width: 448px;
+        height: 252px;
+    }
+
+    /* Section trailer */
+    iframe {
+        width: 90%;
+    }
+
+    /* Section Soundtrack */
+    div#soundtrack {
+        width: 90%;
+    }
+
+    audio {
+        width: 100%;
+    }
+
+    /* Section Available On */
+    div#available-on div:not([class]) {
+        width: 90%;
+        height: 40vh;
+    }
+
+    div#available-on div:not([class]) img {
+        width: 140px;
+        margin: 0 1rem;
+    }
+
+    /* Section Press Kit */
+    div#presskit {
+        width: 90%;
+        margin: auto;
+    }
+
+    /* Section Unity Banner */
+
+    /*  P E N D I E N T E  */
+
+    /* Section About Us */
+    .logo-studio {
+        width: 100%;
+    }
+
+    div#about-us > div.content {
+        width: 90%;
+        text-align: left;
+    }
+
+    div#about-us div.card-hl div.img {
+        width: 50%;
+        margin: auto;
+    }
+
+    div#about-us div.card-hl div.text {
+        width: 100%;
+    }
+    
+    div#about-us div.card-hl div.right, div#about-us div.card-hl div.right h2 {
+        width: 100%;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 0 1rem; 
+    }
+
+    footer div {
+        margin: auto;
+        text-align: center;
+     }
+
+    footer div:nth-child(2) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .copy {
+        position: static;
+        text-align: center;
+    
+    }
+}

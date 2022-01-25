@@ -11,7 +11,8 @@
         <!-- Base reference -->
         <base href="#" target="_blank">
         <!-- CSS -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media-style.css">
         <!-- Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
@@ -32,7 +33,7 @@
         </header>
 
         <!-- Sticky nav -->
-        <nav>
+        <nav class="main-nav" display="none">
             <div class="logo">
                 <a href="#"><img src="img/logos/elliot-logo.png" alt="Elliot Logo"></a>
             </div>
@@ -48,6 +49,27 @@
                     <a href="https://www.instagram.com/plainandgame/"><img src="img/buttons/instagram-btn.png" alt="Elliot on Instagram"></a>
                 </div>
             </div>
+        </nav>
+        <nav class="dropdown-nav">
+            <div class="logo">
+                <a href="#"><img src="img/logos/elliot-logo.png" alt="Elliot Logo"></a>
+            </div>
+            <div class="right">
+                <span class="material-icons">menu</span>
+                <!-- <div>
+                    <div>
+                        <a href="https://store.steampowered.com/app/1310120/Elliot/"><img src="img/buttons/steam-btn.png" alt="Available on Steam"></a>
+                        <a href="https://www.nintendo.com/games/detail/elliot-switch/"><img src="img/buttons/switch-btn.png" alt="Available on Switch"></a>
+                        <a href="https://store.playstation.com/product/EP3111-CUSA25543_00-JANDUSOFT0000001/"><img src="img/buttons/ps4-btn.png" alt="Available on Play Station 4"></a>
+                        <a href="https://www.xbox.com/en-us/games/store/elliot/9p29pvsml3fx"><img src="img/buttons/xbox-btn.png" alt="Available on Xbox One"></a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/plainandgame"><img src="img/buttons/twitter-btn.png" alt="Elliot on Twitter"></a>
+                        <a href="https://www.instagram.com/plainandgame/"><img src="img/buttons/instagram-btn.png" alt="Elliot on Instagram"></a>
+                    </div>
+                </div>-->
+            </div>
+            
         </nav>
 
         <!-- MAIN CONTENT -->
@@ -212,16 +234,8 @@
                 </figure>
                 <div class="audio">
                     <p>Water and Ice - Main Theme</p>
-
-
-                    <!-- 
-
-                        Falta añadir audio e intentar cambiar color del controlador
-
-                    -->
-                    
                     <audio controls>
-                        <source src="" type="audio/extension">
+                        <source src="audios/02-WaterAndIce.mp3" type="audio/mp3">
                     </audio>
                 </div>
                 <div class="btn">
@@ -260,7 +274,8 @@
                 <div class="img">
                     <img src="img/happy-momba.png" alt="A very happy little Momba">
                 </div>
-                <p>If you want to write about Elliot, we have a Press Kit with interesting press and media content. For any specific additional content, please contact with us at: <span class="email">plainandgamestudio@gmail.com</span></p>
+                <p>If you want to write about Elliot, we have a Press Kit with interesting press and media content. For any specific additional content, please contact with us at:</p>
+                <p><span class="material-icons">mail_outline</span><span class="email">plainandgamestudio@gmail.com</span></p>
                 <div class="btn">
                     <a class="btn" href="https://drive.google.com/drive/folders/11HoRnGCKXB2nDtDVJiMa74BBi1CV4FUw">Press Kit</a>    
                 </div>
@@ -301,7 +316,7 @@
                     </div>
                     <!-- Tià -->
                     <div class="card-hl">
-                        <div class="text">
+                        <div class="text right">
                             <h2>Tià</h2>
                             <p>Father, violinist, gamer, youtuber and composer in Elliot. I can distinguish between butter and what looks like butter.</p>
                         </div>
@@ -321,7 +336,7 @@
                     </div>
                     <!-- Marta -->
                     <div class="card-hl">
-                        <div class="text">
+                        <div class="text right">
                             <h2>Marta</h2>
                             <p>I'm one of the artists and designers in Elliot. My main job is to bring life to every level in the game. The first thing I do when I wake up is turn on the computer, make me a coffe and spend a few minutes looking at my fish tank. I love fishes. Blu, blu!</p>
                         </div>
@@ -337,8 +352,8 @@
         <footer>
             <!-- Logo - Copyright, -->
             <div>
-                <img src="" alt="Logo Elliot">
-                <p>© 2022 Elliot Producciones S.L.</p>
+                <!--<img class="elliot-footer" src="favicon.png" alt="Logo Elliot">-->
+                <img class="studio-footer" src="img/logos/plainandgame_logo.png" alt="Logo Plain and Game Studio">
             </div>
             <!-- Mapa Web with anchors -->
             <div>
@@ -353,8 +368,7 @@
             
             <!-- Contact info -->
             <div>
-                <img src="" alt="Logo Plain and Game Studio">
-                <p>plainandgamestudio@gmail.com</p>
+                <p class="copy">© 2022 Elliot Producciones S.L.</p>
             </div>
         </footer>
 
