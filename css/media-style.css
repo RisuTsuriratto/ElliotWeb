@@ -30,7 +30,10 @@
         width: 90%;
         padding-top: 0;
     }
-
+    
+    div.arrow {
+        display: none;
+    }
     /* Sticky nav */
     nav.main-nav {
         display: none;
@@ -38,6 +41,19 @@
 
     nav.dropdown-nav {
         display: flex;
+    }
+
+    .logo {
+        margin-left: 1.5rem;
+    }
+
+    div.right {
+        margin-right: 1.5rem;
+    }
+
+    div.right span {
+        font-size: 2rem;
+        margin-bottom: 1rem;
     }
 
     /*   ### MAIN ###   */
@@ -54,6 +70,11 @@
     div.intro div.card-hl .img, div.intro div.card-hl .text {
         min-width: none !important;
         width: 100%;
+    }
+
+    div.intro div.card-hl:nth-child(2) {
+        display: flex;
+        flex-flow: column-reverse wrap;
     }
 
     /* Section News and Updates */
@@ -73,6 +94,10 @@
         width: 90%;
     }
 
+    div#soundtrack div.title {
+        width: 100%;
+    }
+
     audio {
         width: 100%;
     }
@@ -84,14 +109,23 @@
     }
 
     div#available-on div:not([class]) img {
-        width: 140px;
+        width: 100%;
+        max-width: 140px;
         margin: 0 1rem;
+    }
+
+    div#available-on div.title {
+        width: 100%;
     }
 
     /* Section Press Kit */
     div#presskit {
         width: 90%;
         margin: auto;
+    }
+
+    div#presskit div.title {
+        width: 100%;
     }
 
     /* Section Unity Banner */
@@ -122,6 +156,12 @@
         text-align: left;
         margin: 0;
         padding: 0;
+    }
+
+    div#about-us div.card-hl:nth-child(2n) {
+        display: flex;
+        flex-flow: column-reverse wrap;
+
     }
 
     /* FOOTER */
