@@ -3,20 +3,53 @@
     ##########     MEDIA QUERY     ##########
 
 */
-/*@media (min-width: 901px) and (max-width: 1200px) {
-    div.fullscreen {
-        height: 80vh;
-    }
 
+@media (min-width: 901px) and (max-width: 1400px) {
+    /* Header */
     div.logo-full {
-        width: 100%;
-        padding-top: 0;
+        width: 70%;
+        margin: auto;
+        padding-top: 100px;
     }
 
-    div.title {
-        width: 70%;
+    /* Section Intro */
+    div.intro {
+        width: 90%;
+        margin: auto;
     }
-}*/
+    
+    div.intro div.card-hl .img {
+        width: 43%;
+        min-width: 400px;
+    }
+
+    div.intro div.card-hl .text {
+        width: 40%;
+        min-width: 300px;
+    }
+
+    /* Section Soundtrack */
+    div#soundtrack {
+        width: 90%;
+        margin: auto;
+    }
+
+    figure img {
+        width: 80%;
+        max-width: 650px;
+        transition: ease-out 0.1s;
+    }
+
+    /* Section About Us */
+    div#about-us > div.content {
+        width: 80%;
+        margin: auto;
+    }
+    
+    div#about-us div.card-hl div.right {
+        margin: 0;
+    }
+}
 
 
 @media (max-width: 900px) {
@@ -34,13 +67,16 @@
     div.arrow {
         display: none;
     }
-    /* Sticky nav */
+
+    /* Sticky nav - Dropdown */
     nav.main-nav {
         display: none;
     }
 
     nav.dropdown-nav {
         display: flex;
+
+        position: relative;
     }
 
     .logo {
@@ -50,11 +86,43 @@
     div.right {
         margin-right: 1.5rem;
     }
+    div.right span {
+        transition: 0.2s;
+    }
 
+    div.right span:hover {
+        color: var(--btn-color);
+        transition: 0.2s;
+    }
+
+    div.right > div.dropdown {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        background-color: var(--bg-main-color);
+        border-top: 2px solid var(--overlay-op);
+        box-shadow: 0 8px 8px var(--overlay-op);
+
+        position: absolute;
+        top:  80px;
+        right: 0;
+        left: 0;
+
+        padding: 1rem;
+    }
+
+    div.dropdown img {
+        width: 60px;
+        opacity: 1;
+    }
+    
     div.right span {
         font-size: 2rem;
         margin-bottom: 1rem;
     }
+
+
 
     /*   ### MAIN ###   */
     /* All sections */
@@ -79,9 +147,9 @@
 
     /* Section News and Updates */
     div.card-vl {
-        /*  P E N D I E N T E  */
-        width: 448px;
-        height: 252px;
+        width: 403.2px;
+        height: 226.8px;
+        margin: 1rem;
     }
 
     /* Section trailer */
@@ -92,10 +160,17 @@
     /* Section Soundtrack */
     div#soundtrack {
         width: 90%;
+        margin: auto;
     }
 
     div#soundtrack div.title {
         width: 100%;
+    }
+
+    figure img {
+        width: 90%;
+        min-width: none !important;
+        transition: ease-out 0.1s;
     }
 
     audio {
@@ -120,17 +195,45 @@
 
     /* Section Press Kit */
     div#presskit {
-        width: 90%;
-        margin: auto;
-    }
-
-    div#presskit div.title {
         width: 100%;
     }
 
-    /* Section Unity Banner */
+    div#presskit div:not([class]) {
+        width: 80%;
+        margin: auto;
+    }
 
-    /*  P E N D I E N T E  */
+    div#presskit p:nth-of-type(2) {
+        word-break: break-all;
+    }
+
+    /* Section Unity Banner */
+    div.banner-unity {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+
+        height: 50vh;
+    }
+    
+    div.banner-unity h2 {
+        margin: 1rem;
+    }
+
+    div.banner-unity > div {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    div.banner-unity img {
+        width: 80%;
+        margin: auto;
+    }
 
     /* Section About Us */
     .logo-studio {
@@ -185,4 +288,35 @@
         text-align: center;
     
     }
+}
+
+
+
+@media (max-width: 450px) {
+     /* Header */
+     div.fullscreen {
+        height: 30vh;
+    }
+
+    /* Sticky Nav */
+    div.right > div.dropdown {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+    }
+
+    /* Section Newns and Updates */
+    div.card-vl {
+        width: 320px;
+        height: 180px;
+        margin: 1rem 0;
+    }
+
+    /* Section Available On */
+    div#available-on div:not([class]) img {
+        width: 100%;
+        max-width: 100px;
+    }
+    
 }

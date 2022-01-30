@@ -1,0 +1,127 @@
+body {
+    width: 80%;
+    margin: auto;
+}
+
+main {
+    width: 100%;
+    max-width: 815px;
+    margin: auto;
+}
+
+main > div {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h2.price, h3 {
+    color: var(--sale-color);
+}
+
+main > div img {
+    max-width: 512px;
+    transition: 0.5s;
+}
+
+main > div img:hover {
+    transform: scale(1.1);    transition: 0.5s;
+}
+
+/* HEADER */
+header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+header > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+header > div > p {
+   margin: 0.5rem 1rem;
+   font-size: var(--font-size-small);
+}
+
+header > div > p > span {
+    vertical-align: middle;
+    margin: 0 0.5rem;
+}
+
+header > img {
+    max-width: 850px;
+    border-radius: 16px;
+}
+
+h1 {
+    font-size: var(--font-size-large);
+    margin: 2rem;
+}
+
+/* FOOTER */
+footer {
+    margin: 5rem 0;
+    padding-bottom: 3rem;;
+    text-align: center;
+
+    position: relative;
+}
+
+div.logo-studio {
+    max-width: 500px;
+    margin: 1rem auto;
+}
+
+footer > a img {
+    max-width: 80px;
+    margin:  0.5rem 1rem;
+    opacity: 0.9;
+    transition: 0.5s;
+}
+
+footer > a > img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+footer > a.arrow span {
+    font-size: var(--font-size-large);
+    vertical-align: middle;
+    margin: 0 0.5rem;
+}
+
+footer > a.arrow {
+    position: absolute;
+    bottom: -5%;
+    transition: 0.3s;
+}
+
+footer > a.arrow:hover {
+    color: var(--btn-color);
+    transition: 0.3s;
+}
+
+footer > a.back {
+    left: -5%;
+}
+
+footer > a.forward {
+    right: -5%;
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 90%;
+        margin: auto;
+    }
+
+    header > div > p {
+        margin: 0.2rem;
+     }
+}
