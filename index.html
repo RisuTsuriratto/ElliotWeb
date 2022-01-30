@@ -12,6 +12,7 @@
         <base href="#" target="_blank">
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/main-style.css">
         <link rel="stylesheet" href="css/media-style.css">
         <!-- Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -36,7 +37,7 @@
         </header>
 
         <!-- Sticky nav -->
-        <nav class="main-nav" display="none">
+        <nav class="main-nav">
             <div class="logo">
                 <a href="#"><img src="img/logos/elliot-logo.png" alt="Elliot Logo"></a>
             </div>
@@ -58,8 +59,18 @@
                 <a href="#"><img src="img/logos/elliot-logo.png" alt="Elliot Logo"></a>
             </div>
             <div class="right">
-                <span class="material-icons">menu</span>
-                <!-- <div>
+                <div>
+                    <span class="material-icons">menu</span>
+                </div>
+                <!--
+
+                    FALTA JS PARA DESPLEGAR/OCULTAR EL MENU DROPDOWN
+
+                    FALTA JS PARA ANIMAR EL BOTÓN (SE CONVIERTE EN X)
+
+                -->
+
+                <!--<div class="dropdown">
                     <div>
                         <a href="https://store.steampowered.com/app/1310120/Elliot/"><img src="img/buttons/steam-btn.png" alt="Available on Steam"></a>
                         <a href="https://www.nintendo.com/games/detail/elliot-switch/"><img src="img/buttons/switch-btn.png" alt="Available on Switch"></a>
@@ -116,7 +127,7 @@
                     <img src="img/titles/newsandupdates.png" alt="News and updates">
                 </div>
                 <div class="gallery">
-                    <a href="">
+                    <a href="news_10.html">
                         <!-- 10 Anniversary -->
                         <div id="n10" class="card-vl">
                             <div class="texto">
@@ -265,6 +276,14 @@
                     <img src="img/titles/screenshots.png" alt="Screenshots">
                 </div>
                 <div class="carrousel">
+
+                <!--
+
+                    FALTA CAROUSEL
+
+                -->
+
+                    <div><img src="img/screenshots/screenshot1.png"></div>
                     Espacio reservado para un carrousel de imágenes.
                 </div>
             </div>
@@ -274,13 +293,15 @@
                 <div class="title">
                     <img src="img/titles/presskit.png" alt="Press Kit">
                 </div>
-                <div class="img">
+                <div>
+                    <div class="img">
                     <img src="img/happy-momba.png" alt="A very happy little Momba">
-                </div>
-                <p>If you want to write about Elliot, we have a Press Kit with interesting press and media content. For any specific additional content, please contact with us at:</p>
-                <p><span class="material-icons">mail_outline</span><span class="email">plainandgamestudio@gmail.com</span></p>
-                <div class="btn">
-                    <a class="btn" href="https://drive.google.com/drive/folders/11HoRnGCKXB2nDtDVJiMa74BBi1CV4FUw">Press Kit</a>    
+                    </div>
+                    <p>If you want to write about Elliot, we have a Press Kit with interesting press and media content. For any specific additional content, please contact with us at:</p>
+                    <p><span class="material-icons">mail_outline</span><span class="email">plainandgamestudio@gmail.com</span></p>
+                    <div class="btn">
+                        <a class="btn" href="https://drive.google.com/drive/folders/11HoRnGCKXB2nDtDVJiMa74BBi1CV4FUw">Press Kit</a>    
+                    </div>
                 </div>
             </div>
 
@@ -355,7 +376,6 @@
         <footer>
             <!-- Logo - Copyright, -->
             <div>
-                <!--<img class="elliot-footer" src="favicon.png" alt="Logo Elliot">-->
                 <img class="studio-footer" src="img/logos/plainandgame_logo.png" alt="Logo Plain and Game Studio">
             </div>
             <!-- Mapa Web with anchors -->
