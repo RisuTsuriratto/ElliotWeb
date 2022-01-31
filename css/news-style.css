@@ -56,7 +56,9 @@ a:hover {
     transition: 0.3s
 }
 
-
+.btn a:hover {
+    color: var(--font-color);
+}
 /* Images */
 main > div img {
     max-width: 512px;
@@ -79,6 +81,19 @@ figure img {
 figcaption {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.6);
+}
+img.s-logo {
+    width: 100%;
+    max-width: 266px;
+}
+
+.logo-studio img {
+    width: 100%;
+    max-width: 420px;
+}
+
+img.m-logo {
+    width: 50%;
 }
 
 /* Classes */
@@ -198,6 +213,12 @@ footer > a.forward {
     right: -5%;
 }
 
+footer > a.center {
+    bottom: 0;
+    left: -10%;
+    right: 0;
+}
+
 @media (max-width: 600px) {
     body {
         width: 90%;
@@ -218,6 +239,10 @@ footer > a.forward {
 
     .three, .four {
      width: 50%;
+    }
+
+    img.m-logo {
+        width: 70%;
     }
 
 }

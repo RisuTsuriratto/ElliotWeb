@@ -55,7 +55,7 @@
 @media (max-width: 900px) {
     /* Header */
     div.fullscreen {
-        height: 50vh;
+        height: 50%;
     }
 
     div.logo-full {
@@ -180,7 +180,8 @@
     /* Section Available On */
     div#available-on div:not([class]) {
         width: 90%;
-        height: 40vh;
+        height: 60vh;
+        min-height: 300px;
     }
 
     div#available-on div:not([class]) img {
@@ -215,6 +216,7 @@
         justify-content: center;
 
         height: 50vh;
+        min-height: 300px;
     }
     
     div.banner-unity h2 {
