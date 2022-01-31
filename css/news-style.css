@@ -1,3 +1,4 @@
+/* General Style */
 body {
     width: 80%;
     margin: auto;
@@ -10,25 +11,107 @@ main {
 }
 
 main > div {
-    margin-top: 5rem;
     text-align: center;
 }
 
+main > div.divflex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    margin: 1rem 0;
+}
+
+/* Text */
 h2 {
     text-transform: uppercase;
 }
 
-h2.price, h3 {
-    color: var(--sale-color);
+h3 {
+    font-size: calc(var(--font-size-normal)*1.1);
 }
 
+h4  {
+    font-size: var(--font-size-normal);
+}
+
+span {
+    vertical-align: middle;
+}
+
+/* Lists */
+ul {
+    padding-left: 2rem;
+    font-size: var(--font-size-normal)
+}
+
+/* Links */
+main a {
+    text-decoration: underline;
+    transition: 0.3s
+}
+
+a:hover {
+    color: var(--btn-color);
+    transition: 0.3s
+}
+
+
+/* Images */
 main > div img {
     max-width: 512px;
     transition: 0.5s;
 }
 
 main > div img:hover {
-    transform: scale(1.1);    transition: 0.5s;
+    transform: scale(1.1);    
+    transition: 0.5s;
+}
+
+figure {
+    margin-bottom: 0.8rem;
+}
+
+figure img {
+    width: 85%;
+}
+
+figcaption {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Classes */
+.center {
+    text-align: center;
+}
+
+.three {
+     width: 33%;
+}
+
+.four {
+     width: 24.5%;
+}
+
+.blue {
+    color: var(--btn-color);
+}
+
+.green {
+    color: var(--sale-color);
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.normal {
+    text-transform: none;
 }
 
 /* HEADER */
@@ -61,6 +144,7 @@ header > img {
 h1 {
     font-size: var(--font-size-large);
     margin: 2rem;
+    line-height: 3rem;
 }
 
 /* FOOTER */
@@ -92,7 +176,6 @@ footer > a > img:hover {
 
 footer > a.arrow span {
     font-size: var(--font-size-large);
-    vertical-align: middle;
     margin: 0 0.5rem;
 }
 
@@ -124,4 +207,17 @@ footer > a.forward {
     header > div > p {
         margin: 0.2rem;
      }
+
+    main > div.divflex {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+
+    margin: 1rem 0;
+    }
+
+    .three, .four {
+     width: 50%;
+    }
+
 }
