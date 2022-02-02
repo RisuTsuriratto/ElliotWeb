@@ -75,8 +75,6 @@
 
     nav.dropdown-nav {
         display: flex;
-
-        position: relative;
     }
 
     .logo {
