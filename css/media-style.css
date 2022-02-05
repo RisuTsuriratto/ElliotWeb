@@ -40,6 +40,12 @@
         transition: ease-out 0.1s;
     }
 
+    /* Screenshots */
+    div.carrousel {
+        width: 90%;
+        margin: auto;
+    }
+
     /* Section About Us */
     div#about-us > div.content {
         width: 80%;
@@ -202,7 +208,7 @@
         margin: auto;
     }
 
-    div#presskit p:nth-of-type(2) {
+    div#presskit p:nth-of-type(2), div#about-us div.text p:nth-of-type(2) {
         word-break: break-all;
     }
 
@@ -303,7 +309,6 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-
     }
 
     /* Section Newns and Updates */

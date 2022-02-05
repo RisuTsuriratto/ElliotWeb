@@ -14,9 +14,10 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/main-style.css">
         <link rel="stylesheet" href="css/media-style.css">
+        <!-- Bootstrap 5 -->
+        <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
         <!-- Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Title & Favicon -->
         <title>Elliot | An indie 2D platformer</title>
         <link rel="icon" href="favicon.png">
@@ -59,7 +60,7 @@
                 <a href="#"><img src="img/logos/elliot-logo.png" alt="Elliot Logo"></a>
             </div>
             <div class="right">
-                <div>
+                <div data-bs-toggle="collapse" href="#hamburger-nav">
                     <span class="material-icons">menu</span>
                 </div>
                 <!--
@@ -70,7 +71,7 @@
 
                 -->
 
-                <!--<div class="dropdown">
+                <div class="dropdown collapse" id="hamburger-nav">
                     <div>
                         <a href="https://store.steampowered.com/app/1310120/Elliot/"><img src="img/buttons/steam-btn.png" alt="Available on Steam"></a>
                         <a href="https://www.nintendo.com/games/detail/elliot-switch/"><img src="img/buttons/switch-btn.png" alt="Available on Switch"></a>
@@ -81,7 +82,7 @@
                         <a href="https://twitter.com/plainandgame"><img src="img/buttons/twitter-btn.png" alt="Elliot on Twitter"></a>
                         <a href="https://www.instagram.com/plainandgame/"><img src="img/buttons/instagram-btn.png" alt="Elliot on Instagram"></a>
                     </div>
-                </div>-->
+                </div>
             </div>
             
         </nav>
@@ -276,15 +277,78 @@
                     <img src="img/titles/screenshots.png" alt="Screenshots">
                 </div>
                 <div class="carrousel">
-
-                <!--
-
-                    FALTA CAROUSEL
-
-                -->
-
-                    <div><img src="img/screenshots/screenshot1.png"></div>
-                    Espacio reservado para un carrousel de imágenes.
+                    <div id="carouselScreenshots" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button data-bs-target="#carouselScreenshots" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Screenshot 1"></button>
+                            <button data-bs-target="#carouselScreenshots" data-bs-slide-to="1" aria-label="Screenshot 2"></button>
+                            <button data-bs-target="#carouselScreenshots" data-bs-slide-to="2" aria-label="Screenshot 3"></button>
+                            <button data-bs-target="#carouselScreenshots" data-bs-slide-to="3" aria-label="Screenshot 4"></button>
+                            <button data-bs-target="#carouselScreenshots" data-bs-slide-to="4" aria-label="Screenshot 5"></button>
+                            <button data-bs-target="#carouselScreenshots" data-bs-slide-to="5" aria-label="Screenshot 6"></button>
+                            <button data-bs-target="#carouselScreenshots" data-bs-slide-to="6" aria-label="Screenshot 7"></button>
+                            <button data-bs-target="#carouselScreenshots" data-bs-slide-to="7" aria-label="Screenshot 8"></button>
+                            <button data-bs-target="#carouselScreenshots" data-bs-slide-to="8" aria-label="Screenshot 9"></button>
+                            <button data-bs-target="#carouselScreenshots" data-bs-slide-to="9" aria-label="Screenshot 10"></button>
+                            <button data-bs-target="#carouselScreenshots" data-bs-slide-to="10" aria-label="Screenshot 11"></button>
+                            <button data-bs-target="#carouselScreenshots" data-bs-slide-to="11" aria-label="Screenshot 12"></button>
+                            <button data-bs-target="#carouselScreenshots" data-bs-slide-to="12" aria-label="Screenshot 13"></button>
+                            <button data-bs-target="#carouselScreenshots" data-bs-slide-to="13" aria-label="Screenshot 14"></button>
+                            <button data-bs-target="#carouselScreenshots" data-bs-slide-to="14" aria-label="Screenshot 15"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/screenshots/screenshot1.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/screenshots/screenshot2.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/screenshots/screenshot3.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/screenshots/screenshot4.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/screenshots/screenshot5.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/screenshots/screenshot6.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/screenshots/screenshot7.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/screenshots/screenshot8.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/screenshots/screenshot9.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/screenshots/screenshot10.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/screenshots/screenshot11.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/screenshots/screenshot12.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/screenshots/screenshot13.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/screenshots/screenshot14.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/screenshots/screenshot15.png" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" data-bs-target="#carouselScreenshots" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" data-bs-target="#carouselScreenshots" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -336,6 +400,7 @@
                         <div class="text">
                             <h2>Edu</h2>
                             <p>Programmer and designer in Elliot. I started this adventure and I am really happy to have found such a great team on the way. I love interaction with the community so please don't hesitate to send me an email!</p>
+                            <p><span class="material-icons">mail_outline</span><span class="email">plainandgamestudio@gmail.com</span></p>
                         </div>
                     </div>
                     <!-- Tià -->
@@ -397,5 +462,6 @@
 
         <!-- Import custom JS -->
         <script type="text/javascript" src="script.js"></script>
+        <script  type="text/javascript" src="bootstrap/bootstrap.js"></script>
     </body>
 </html>

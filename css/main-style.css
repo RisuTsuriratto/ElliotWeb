@@ -359,7 +359,8 @@ div#screenshots {
 }
 
 div.carrousel {
-    width: 60%;
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -379,12 +380,12 @@ div#presskit .img {
     margin: auto;
 }
 
-div#presskit p:last-of-type span {
+div#presskit p:last-of-type span, div#about-us div.text p:last-of-type span {
     vertical-align: middle;
     margin: 0 .5rem;
 }
 
-div#presskit p:last-of-type span:first-of-type {
+div#presskit p:last-of-type span:first-of-type, div#about-us div.text p:last-of-type span:first-child {
     color: var(--btn-color);
 }
 
