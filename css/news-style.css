@@ -17,9 +17,15 @@ main > div {
 main > div.divflex {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
 
     margin: 1rem 0;
+}
+
+div.twitter {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: stretch;
 }
 
 /* Text */
@@ -59,6 +65,7 @@ a:hover {
 .btn a:hover {
     color: var(--font-color);
 }
+
 /* Images */
 main > div img {
     max-width: 512px;
@@ -82,6 +89,7 @@ figcaption {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.6);
 }
+
 img.s-logo {
     width: 100%;
     max-width: 266px;
@@ -151,7 +159,7 @@ header > div > p > span {
     margin: 0 0.5rem;
 }
 
-header > img {
+header img {
     max-width: 850px;
     border-radius: 16px;
 }
@@ -217,6 +225,14 @@ footer > a.center {
     bottom: 0;
     left: -10%;
     right: 0;
+}
+
+@media (max-width: 900px) {
+    div.twitter {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: stretch;
+    }
 }
 
 @media (max-width: 600px) {

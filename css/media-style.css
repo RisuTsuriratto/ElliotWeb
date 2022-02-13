@@ -60,6 +60,10 @@
 
 @media (max-width: 900px) {
     /* Header */
+    header {
+        background-image: url(../img/900px/elliot-bg-900.png);
+    }
+
     div.fullscreen {
         height: 50%;
     }
@@ -103,16 +107,16 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-
+        
         background-color: var(--bg-main-color);
         border-top: 2px solid var(--overlay-op);
         box-shadow: 0 8px 8px var(--overlay-op);
-
+        
         position: absolute;
         top:  80px;
         right: 0;
         left: 0;
-
+        
         padding: 1rem;
     }
 
@@ -150,6 +154,47 @@
     }
 
     /* Section News and Updates */
+    /* News images */
+    #n10 {
+        background-image: url(../img/900px/news/news10-400.png);
+    }
+
+    #n9 {
+        background-image: url(../img/900px/news/news9-400.png);
+    }
+
+    #n8 {
+        background-image: url(../img/900px/news/news8-400.png);
+    }
+
+    #n7 {
+        background-image: url(../img/900px/news/news7-400.png);
+    }
+
+    #n6 {
+        background-image: url(../img/900px/news/news6-400.png);
+    }
+
+    #n5 {
+        background-image: url(../img/900px/news/news5-400.png);
+    }
+
+    #n4 {
+        background-image: url(../img/900px/news/news4-400.png);
+    }
+
+    #n3 {
+        background-image: url(../img/900px/news/news3-400.png);
+    }
+
+    #n2 {
+        background-image: url(../img/900px/news/news2-400.png);
+    }
+
+    #n1 {
+        background-image: url(../img/900px/news/news1-400.png);
+    }
+
     div.card-vl {
         width: 403.2px;
         height: 226.8px;
@@ -214,6 +259,7 @@
 
     /* Section Unity Banner */
     div.banner-unity {
+        background-image: url(../img/900px/unity-banner-900.png);
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -300,6 +346,10 @@
 
 @media (max-width: 450px) {
      /* Header */
+     header {
+        background-image: url(../img/450px/elliot-bg-450.png);
+    }
+
      div.fullscreen {
         height: 30vh;
     }
@@ -312,6 +362,47 @@
     }
 
     /* Section Newns and Updates */
+    /* News images */
+    #n10 {
+        background-image: url(../img/450px/news/news10-320.png);
+    }
+
+    #n9 {
+        background-image: url(../img/450px/news/news9-320.png);
+    }
+
+    #n8 {
+        background-image: url(../img/450px/news/news8-320.png);
+    }
+
+    #n7 {
+        background-image: url(../img/450px/news/news7-320.png);
+    }
+
+    #n6 {
+        background-image: url(../img/450px/news/news6-320.png);
+    }
+
+    #n5 {
+        background-image: url(../img/450px/news/news5-320.png);
+    }
+
+    #n4 {
+        background-image: url(../img/450px/news/news4-320.png);
+    }
+
+    #n3 {
+        background-image: url(../img/450px/news/news3-320.png);
+    }
+
+    #n2 {
+        background-image: url(../img/450px/news/news2-320.png);
+    }
+
+    #n1 {
+        background-image: url(../img/450px/news/news1-320.png);
+    }
+
     div.card-vl {
         width: 320px;
         height: 180px;

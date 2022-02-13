@@ -29,7 +29,12 @@
             <!-- Background and logo full-screen -->
             <div class="fullscreen">
                 <div class="logo-full"> 
-                    <img src="img/logos/elliot-logo.png" alt="Elliot Logo">
+                    <picture>
+                        <source srcset="img/full/logos/header-elliot-logo.png" media="(min-width: 900px)">
+                        <source srcset="img/900px/elliot-logo-810.png" media="(min-width: 451px)">
+                        <source srcset="img/450px/elliot-logo-405.png" media="(max-width: 450px)">
+                        <img src="img/full/logos/header-elliot-logo.png" alt="Elliot Logo">
+                    </picture>
                 </div>
                 <div class="arrow">
                     <span class="material-icons">arrow_downward</span>
@@ -40,60 +45,78 @@
         <!-- Sticky nav -->
         <nav class="main-nav">
             <div class="logo">
-                <a href="#"><img src="img/logos/elliot-logo.png" alt="Elliot Logo"></a>
+                <a href="#" target="_self"><img src="img/full/logos/nav-elliot-logo.png" alt="Elliot Logo"></a>
             </div>
             <div class="right">
                 <div class="platforms">
-                    <a href="https://store.steampowered.com/app/1310120/Elliot/"><img src="img/buttons/steam-btn.png" alt="Available on Steam"></a>
-                    <a href="https://www.nintendo.com/games/detail/elliot-switch/"><img src="img/buttons/switch-btn.png" alt="Available on Switch"></a>
-                    <a href="https://store.playstation.com/product/EP3111-CUSA25543_00-JANDUSOFT0000001/"><img src="img/buttons/ps4-btn.png" alt="Available on Play Station 4"></a>
-                    <a href="https://www.xbox.com/en-us/games/store/elliot/9p29pvsml3fx"><img src="img/buttons/xbox-btn.png" alt="Available on Xbox One"></a>
+                    <a href="https://store.steampowered.com/app/1310120/Elliot/">
+                        <picture>
+                            <source srcset="" media="">
+                        </picture>
+                        <img src="img/full/buttons/nav-steam-btn.png" alt="Available on Steam">
+                    </a>
+                    <a href="https://www.nintendo.com/games/detail/elliot-switch/">
+                        <picture>
+                            <source srcset="" media="">
+                        </picture>
+                        <img src="img/full/buttons/nav-switch-btn.png" alt="Available on Switch">
+                    </a>
+                    <a href="https://store.playstation.com/product/EP3111-CUSA25543_00-JANDUSOFT0000001/">
+                        <picture>
+                            <source srcset="" media="">
+                        </picture>
+                        <img src="img/full/buttons/nav-ps4-btn.png" alt="Available on Play Station 4">
+                    </a>
+                    <a href="https://www.xbox.com/en-us/games/store/elliot/9p29pvsml3fx">
+                        <picture>
+                            <source srcset="" media="">
+                        </picture>
+                        <img src="img/full/buttons/nav-xbox-btn.png" alt="Available on Xbox One">
+                    </a>
                 </div>
                 <div class="social">
-                    <a href="https://twitter.com/plainandgame"><img src="img/buttons/twitter-btn.png" alt="Elliot on Twitter"></a>
-                    <a href="https://www.instagram.com/plainandgame/"><img src="img/buttons/instagram-btn.png" alt="Elliot on Instagram"></a>
+                    <a href="https://twitter.com/plainandgame"><img src="img/full/buttons/nav-twitter-btn.png" alt="Elliot on Twitter"></a>
+                    <a href="https://www.instagram.com/plainandgame/"><img src="img/full/buttons/nav-instagram-btn.png" alt="Elliot on Instagram"></a>
                 </div>
             </div>
         </nav>
+
+       <!-- Sticky mobile nav --> 
         <nav class="dropdown-nav">
             <div class="logo">
-                <a href="#"><img src="img/logos/elliot-logo.png" alt="Elliot Logo"></a>
+                <a href="#" target="_self"><img src="img/full/logos/nav-elliot-logo.png" alt="Elliot Logo"></a>
             </div>
             <div class="right">
-                <div data-bs-toggle="collapse" href="#hamburger-nav">
+                <div id="menu-collapse-button" data-bs-toggle="" href="#hamburger-nav">
                     <span class="material-icons">menu</span>
                 </div>
-                <!--
-
-                    FALTA JS PARA DESPLEGAR/OCULTAR EL MENU DROPDOWN
-
-                    FALTA JS PARA ANIMAR EL BOTÓN (SE CONVIERTE EN X)
-
-                -->
-
-                <div class="dropdown collapse" id="hamburger-nav">
+                <div class="dropdown" id="hamburger-nav" ishidden="false">
                     <div>
-                        <a href="https://store.steampowered.com/app/1310120/Elliot/"><img src="img/buttons/steam-btn.png" alt="Available on Steam"></a>
-                        <a href="https://www.nintendo.com/games/detail/elliot-switch/"><img src="img/buttons/switch-btn.png" alt="Available on Switch"></a>
-                        <a href="https://store.playstation.com/product/EP3111-CUSA25543_00-JANDUSOFT0000001/"><img src="img/buttons/ps4-btn.png" alt="Available on Play Station 4"></a>
-                        <a href="https://www.xbox.com/en-us/games/store/elliot/9p29pvsml3fx"><img src="img/buttons/xbox-btn.png" alt="Available on Xbox One"></a>
+                        <a href="https://store.steampowered.com/app/1310120/Elliot/"><img src="img/450px/buttons/steam-btn.png" alt="Available on Steam"></a>
+                        <a href="https://www.nintendo.com/games/detail/elliot-switch/"><img src="img/450px/buttons/switch-btn.png" alt="Available on Switch"></a>
+                        <a href="https://store.playstation.com/product/EP3111-CUSA25543_00-JANDUSOFT0000001/"><img src="img/450px/buttons/ps4-btn.png" alt="Available on Play Station 4"></a>
+                        <a href="https://www.xbox.com/en-us/games/store/elliot/9p29pvsml3fx"><img src="img/450px/buttons/xbox-btn.png" alt="Available on Xbox One"></a>
                     </div>
                     <div>
-                        <a href="https://twitter.com/plainandgame"><img src="img/buttons/twitter-btn.png" alt="Elliot on Twitter"></a>
-                        <a href="https://www.instagram.com/plainandgame/"><img src="img/buttons/instagram-btn.png" alt="Elliot on Instagram"></a>
+                        <a href="https://twitter.com/plainandgame"><img src="img/450px/buttons/twitter-btn.png" alt="Elliot on Twitter"></a>
+                        <a href="https://www.instagram.com/plainandgame/"><img src="img/450px/buttons/instagram-btn.png" alt="Elliot on Instagram"></a>
                     </div>
                 </div>
             </div>
-            
         </nav>
-
+            
         <!-- MAIN CONTENT -->
         <main>
             <!-- Introduction -->
             <div class="intro">
                 <div class="card-hl">
                     <div class="img">
-                        <img src="img/hero-banner.png" alt="">
+                        <picture>
+                            <source srcset="img/full/intro-img1.png" media="(min-width: 900px)">
+                            <source srcset="img/900px/intro-img1-810.png" media="(min-width: 451px)">
+                            <source srcset="img/450px/intro-img1-405.png" media="(max-width: 450px)">
+                            <img src="img/full/intro-img1.png" alt="Elliot and Manuel in the forest">
+                        </picture>
                     </div>
                     <div class="text">
                         <h2>The main essence of Elliot</h2>
@@ -109,23 +132,24 @@
                         <p>Really it’s technicolor hell!</p>
                     </div>
                     <div class="img  float-right">
-                        <img src="img/menu-banner.png" alt="">
+                        <picture>
+                            <source srcset="img/full/intro-img2.png" media="(min-width: 900px)">
+                            <source srcset="img/900px/intro-img2-810.png" media="(min-width: 451px)">
+                            <source srcset="img/450px/intro-img2-405.png" media="(max-width: 450px)">
+                            <img src="img/full/intro-img2.png" alt="Elliot sleeping under a tree">
+                        </picture>
                     </div>
                 </div>
             </div>
+
             <!-- News and updates -->
-
-            <!--
-
-                FALTA JS PARA OCULTAR DE NUEVO LAS NOTICIAS
-
-                FALTA JS PARA ANIMAR EL BOTÓN
-
-            -->
-
             <div id="news">
                 <div class="title">
-                    <img src="img/titles/newsandupdates.png" alt="News and updates">
+                    <picture>
+                        <source srcset="img/full/titles/news-680.png" media="(min-width: 451px)">
+                        <source srcset="img/450px/titles/news-405.png" media="(max-width: 450px)">
+                        <img src="img/full/titles/news-680.png" alt="News and updates">
+                    </picture>
                 </div>
                 <div class="gallery">
                     <a href="news_10.html">
@@ -229,7 +253,11 @@
             <!-- Trailer -->
             <div id="trailer">
                 <div class="title">
-                    <img src="img/titles/trailer.png" alt="Trailer">
+                    <picture>
+                        <source srcset="img/full/titles/trailer-680.png" media="(min-width: 451px)">
+                        <source srcset="img/450px/titles/trailer-405.png" media="(max-width: 450px)">
+                        <img src="img/full/titles/trailer-680.png" alt="Trailer">
+                    </picture>
                 </div>
                 <div class="video"> 
                     <iframe src="https://www.youtube.com/embed/wkh16HTreoA?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en-gb&amp;autohide=2&amp;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"></iframe>
@@ -239,11 +267,19 @@
             <!-- Soundtrack -->
             <div id="soundtrack">
                 <div class="title">
-                    <img src="img/titles/soundtrack.png" alt="Soundtrack">
+                    <picture>
+                        <source srcset="img/full/titles/soundtrack-680.png" media="(min-width: 451px)">
+                        <source srcset="img/450px/titles/soundtrack-405.png" media="(max-width: 450px)">
+                        <img src="img/full/titles/soundtrack-680.png" alt="Soundtrack">
+                    </picture>
                 </div>
                 <figure>
                     <a href="https://store.steampowered.com/app/1471340/Banda_Sonora_de_Elliot/">
-                        <img src="img/soundtrack-square.png" alt="Soundtrack">
+                        <picture>
+                            <source srcset="img/full/soundtrack.png" media="(min-width: 451px)">
+                            <source srcset="img/450px/soundtrack-374.png" media="(max-width: 450px)">
+                            <img src="img/full/soundtrack.png" alt="Soundtrack Cover">
+                        </picture>
                     </a>
                     <figcaption>Full Soundtrack available on Steam</figcaption>
                 </figure>
@@ -261,20 +297,28 @@
             <!-- Available on -->
             <div id="available-on">
                 <div class="title">
-                    <img src="img/titles/availableon.png" alt="Available On">
+                    <picture>
+                        <source srcset="img/full/titles/available-680.png" media="(min-width: 451px)">
+                        <source srcset="img/450px/titles/available-405.png" media="(max-width: 450px)">
+                        <img src="img/full/titles/available-680.png" alt="Available On">
+                    </picture>
                 </div>
                 <div>
-                    <a href="https://store.steampowered.com/app/1310120/Elliot/"><img src="img/buttons/steam-btn.png" alt="Available on Steam"></a>
-                    <a href="https://www.nintendo.com/games/detail/elliot-switch/"><img src="img/buttons/switch-btn.png" alt="Available on Switch"></a>
-                    <a href="https://store.playstation.com/product/EP3111-CUSA25543_00-JANDUSOFT0000001/"><img src="img/buttons/ps4-btn.png" alt="Available on Play Station 4"></a>
-                    <a href="https://www.xbox.com/en-us/games/store/elliot/9p29pvsml3fx"><img src="img/buttons/xbox-btn.png" alt="Available on Xbox One"></a>
+                    <a href="https://store.steampowered.com/app/1310120/Elliot/"><img src="img/full/buttons/av-steam-btn.png" alt="Available on Steam"></a>
+                    <a href="https://www.nintendo.com/games/detail/elliot-switch/"><img src="img/full/buttons/av-switch-btn.png" alt="Available on Switch"></a>
+                    <a href="https://store.playstation.com/product/EP3111-CUSA25543_00-JANDUSOFT0000001/"><img src="img/full/buttons/av-ps4-btn.png" alt="Available on Play Station 4"></a>
+                    <a href="https://www.xbox.com/en-us/games/store/elliot/9p29pvsml3fx"><img src="img/full/buttons/av-xbox-btn.png" alt="Available on Xbox One"></a>
                 </div>
             </div>
 
             <!-- Screenshots -->
             <div id="screenshots">
                 <div class="title">
-                    <img src="img/titles/screenshots.png" alt="Screenshots">
+                    <picture>
+                        <source srcset="img/full/titles/screenshots-680.png" media="(min-width: 451px)">
+                        <source srcset="img/450px/titles/screenshots-405.png" media="(max-width: 450px)">
+                        <img src="img/full/titles/screenshots-680.png" alt="Screenshots">
+                    </picture>
                 </div>
                 <div class="carrousel">
                     <div id="carouselScreenshots" class="carousel slide" data-bs-ride="carousel">
@@ -297,49 +341,124 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="img/screenshots/screenshot1.png" alt="...">
+                               <picture>
+                                    <source srcset="" media="(min-width: 900px)">
+                                    <source srcset="" media="(min-width: 451px)">
+                                    <source srcset="" media="(max-width: 450px)">  
+                                    <img src="img/full/screenshots/screenshot1.png" alt="...">
+                                </picture>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/screenshots/screenshot2.png" alt="...">
+                                <picture>
+                                    <source srcset="" media="(min-width: 900px)">
+                                    <source srcset="" media="(min-width: 451px)">
+                                    <source srcset="" media="(max-width: 450px)">  
+                                    <img src="img/full/screenshots/screenshot2.png" alt="...">
+                                </picture>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/screenshots/screenshot3.png" alt="...">
+                                <picture>
+                                    <source srcset="" media="(min-width: 900px)">
+                                    <source srcset="" media="(min-width: 451px)">
+                                    <source srcset="" media="(max-width: 450px)">  
+                                    <img src="img/full/screenshots/screenshot3.png" alt="...">
+                                </picture>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/screenshots/screenshot4.png" alt="...">
+                                <picture>
+                                    <source srcset="" media="(min-width: 900px)">
+                                    <source srcset="" media="(min-width: 451px)">
+                                    <source srcset="" media="(max-width: 450px)">  
+                                    <img src="img/full/screenshots/screenshot4.png" alt="...">
+                                </picture>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/screenshots/screenshot5.png" alt="...">
+                                <picture>
+                                    <source srcset="" media="(min-width: 900px)">
+                                    <source srcset="" media="(min-width: 451px)">
+                                    <source srcset="" media="(max-width: 450px)">  
+                                    <img src="img/full/screenshots/screenshot5.png" alt="...">
+                                </picture>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/screenshots/screenshot6.png" alt="...">
+                                <picture>
+                                    <source srcset="" media="(min-width: 900px)">
+                                    <source srcset="" media="(min-width: 451px)">
+                                    <source srcset="" media="(max-width: 450px)">
+                                    <img src="img/full/screenshots/screenshot6.png" alt="...">
+                                </picture>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/screenshots/screenshot7.png" alt="...">
+                                <picture>
+                                    <source srcset="" media="(min-width: 900px)">
+                                    <source srcset="" media="(min-width: 451px)">
+                                    <source srcset="" media="(max-width: 450px)">
+                                    <img src="img/full/screenshots/screenshot7.png" alt="...">
+                                </picture>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/screenshots/screenshot8.png" alt="...">
+                                <picture>
+                                    <source srcset="" media="(min-width: 900px)">
+                                    <source srcset="" media="(min-width: 451px)">
+                                    <source srcset="" media="(max-width: 450px)">
+                                    <img src="img/full/screenshots/screenshot8.png" alt="...">
+                                </picture>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/screenshots/screenshot9.png" alt="...">
+                                <picture>
+                                    <source srcset="" media="(min-width: 900px)">
+                                    <source srcset="" media="(min-width: 451px)">
+                                    <source srcset="" media="(max-width: 450px)">
+                                    <img src="img/full/screenshots/screenshot9.png" alt="...">
+                                </picture>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/screenshots/screenshot10.png" alt="...">
+                                <picture>
+                                    <source srcset="" media="(min-width: 900px)">
+                                    <source srcset="" media="(min-width: 451px)">
+                                    <source srcset="" media="(max-width: 450px)">  
+                                    <img src="img/full/screenshots/screenshot10.png" alt="...">
+                                </picture>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/screenshots/screenshot11.png" alt="...">
+                                <picture>
+                                    <source srcset="" media="(min-width: 900px)">
+                                    <source srcset="" media="(min-width: 451px)">
+                                    <source srcset="" media="(max-width: 450px)">  
+                                    <img src="img/full/screenshots/screenshot11.png" alt="...">
+                                </picture>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/screenshots/screenshot12.png" alt="...">
+                                <picture>
+                                    <source srcset="" media="(min-width: 900px)">
+                                    <source srcset="" media="(min-width: 451px)">
+                                    <source srcset="" media="(max-width: 450px)">  
+                                    <img src="img/full/screenshots/screenshot12.png" alt="...">
+                                </picture>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/screenshots/screenshot13.png" alt="...">
+                                <picture>
+                                    <source srcset="" media="(min-width: 900px)">
+                                    <source srcset="" media="(min-width: 451px)">
+                                    <source srcset="" media="(max-width: 450px)">  
+                                    <img src="img/full/screenshots/screenshot13.png" alt="...">
+                                </picture>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/screenshots/screenshot14.png" alt="...">
+                                <picture>
+                                    <source srcset="" media="(min-width: 900px)">
+                                    <source srcset="" media="(min-width: 451px)">
+                                    <source srcset="" media="(max-width: 450px)">  
+                                    <img src="img/full/screenshots/screenshot14.png" alt="...">
+                                </picture>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/screenshots/screenshot15.png" alt="...">
+                                <picture>
+                                    <source srcset="" media="(min-width: 900px)">
+                                    <source srcset="" media="(min-width: 451px)">
+                                    <source srcset="" media="(max-width: 450px)">  
+                                    <img src="img/full/screenshots/screenshot15.png" alt="...">
+                                </picture>
                             </div>
                         </div>
                         <button class="carousel-control-prev" data-bs-target="#carouselScreenshots" data-bs-slide="prev">
@@ -355,11 +474,15 @@
             <!-- Press Kit -->
             <div id="presskit">
                 <div class="title">
-                    <img src="img/titles/presskit.png" alt="Press Kit">
+                    <picture>
+                        <source srcset="img/full/titles/presskit-680.png" media="(min-width: 451px)">
+                        <source srcset="img/450px/titles/presskit-405.png" media="(max-width: 450px)">
+                        <img src="img/full/titles/presskit-680.png" alt="Press Kit">
+                    </picture>
                 </div>
                 <div>
                     <div class="img">
-                    <img src="img/happy-momba.png" alt="A very happy little Momba">
+                    <img src="img/full/press-momba.png" alt="A happy little Momba">
                     </div>
                     <p>If you want to write about Elliot, we have a Press Kit with interesting press and media content. For any specific additional content, please contact with us at:</p>
                     <p><span class="material-icons">mail_outline</span><span class="email">plainandgamestudio@gmail.com</span></p>
@@ -377,7 +500,11 @@
                         <h2>made with</h2>
                     </div>
                     <div>
-                        <img src="img/logos/unity-logo.png" alt="Logo Unity">
+                        <picture>
+                            <source srcset="img/full/logos/unity-logo.png" media="(min-width: 901px)">
+                            <source srcset="img/900px/unity-logo-400.png" media="(max-width: 900px)">
+                            <img src="img/full/logos/unity-logo.png" alt="Available On">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -385,17 +512,30 @@
             <!-- About Us -->
             <div id="about-us">
                 <div class="title">
-                    <img src="img/titles/aboutus.png" alt="About Us">
+                    <picture>
+                        <source srcset="img/full/titles/about-680.png" media="(min-width: 451px)">
+                        <source srcset="img/450px/titles/about-405.png" media="(max-width: 450px)">
+                        <img src="img/full/titles/about-680.png" alt="About Us">
+                    </picture>
                 </div>
                 <div class="content">
                     <div class="logo-studio">
-                        <img src="img/logos/plainandgame_logo.png" alt="Logo Plain and Game Studio">
+                        <picture>
+                            <source srcset="img/full/logos/abus-plainandgame-logo.png" media="(min-width: 900px)">
+                            <source srcset="img/900px/plainandgame_logo-810.png" media="(min-width: 451px)">
+                            <source srcset="img/450px/abus-plainandgame-logo.png" media="(max-width: 450px)">
+                            <img src="img/full/logos/abus-plainandgame-logo.png" alt="Pres Kit">
+                        </picture>
                     </div>
                     <p>Plain and Game Studio is the indie studio behind Elliot. We are a gang of four people doing our best to release our first title without any external funding.</p>
                     <!-- Edu -->
                     <div class="card-hl">
                         <div class="img">
-                            <img src="img/eduandelliot.png">
+                            <picture>
+                                <source srcset="img/full/team/edu.png" media="(min-width: 901px)">
+                                <source srcset="img/450px/team/edu-222.png" media="(max-width: 900px)">
+                                <img src="img/full/team/edu.png" alt="Edu">
+                            </picture>
                         </div>
                         <div class="text">
                             <h2>Edu</h2>
@@ -410,13 +550,21 @@
                             <p>Father, violinist, gamer, youtuber and composer in Elliot. I can distinguish between butter and what looks like butter.</p>
                         </div>
                         <div class="img">
-                            <img src="img/tiaandelliot.png">
+                            <picture>
+                                <source srcset="img/full/team/tia.png" media="(min-width: 901px)">
+                                <source srcset="img/450px/team/tia-222.png" media="(max-width: 900px)">
+                                <img src="img/full/team/tia.png" alt="Tià">
+                            </picture>
                         </div>
                     </div>
                     <!-- Diego -->
                     <div class="card-hl">
                         <div class="img">
-                            <img src="img/diegoandelliot.png">
+                            <picture>
+                                <source srcset="img/full/team/diego.png" media="(min-width: 901px)">
+                                <source srcset="img/450px/team/diego-222.png" media="(max-width: 900px)">
+                                <img src="img/full/team/diego.png" alt="Diego">
+                            </picture>
                         </div>
                         <div class="text">
                             <h2>Diego</h2>
@@ -430,7 +578,11 @@
                             <p>I'm one of the artists and designers in Elliot. My main job is to bring life to every level in the game. The first thing I do when I wake up is turn on the computer, make me a coffe and spend a few minutes looking at my fish tank. I love fishes. Blu, blu!</p>
                         </div>
                         <div class="img">
-                            <img src="img/martaandelliot.png">
+                            <picture>
+                                <source srcset="img/full/team/marta.png" media="(min-width: 901px)">
+                                <source srcset="img/450px/team/marta-222.png" media="(max-width: 900px)">
+                                <img src="img/full/team/marta.png" alt="Marta">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -441,7 +593,7 @@
         <footer>
             <!-- Logo - Copyright, -->
             <div>
-                <img class="studio-footer" src="img/logos/plainandgame_logo.png" alt="Logo Plain and Game Studio">
+                <img class="studio-footer" src="img/full/logos/footer-plainandgame-logo.png" alt="Logo Plain and Game Studio">
             </div>
             <!-- Mapa Web with anchors -->
             <div>
@@ -461,7 +613,7 @@
         </footer>
 
         <!-- Import custom JS -->
-        <script type="text/javascript" src="script.js"></script>
         <script  type="text/javascript" src="bootstrap/bootstrap.js"></script>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
