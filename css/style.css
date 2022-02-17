@@ -22,6 +22,7 @@
     --btn-color: #1198db;
     --btn-hov: #0e83be;
     --btn-active: #00d084;
+
 }
 
 /* Reset and general style */
@@ -30,6 +31,7 @@
     padding: 0;
     letter-spacing: 1px;
     line-height: 2rem;
+    
 }
 
 body {
