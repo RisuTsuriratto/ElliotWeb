@@ -153,10 +153,6 @@ div.gallery {
     justify-content: center;
 }
 
-#n1, #n2, #n3, #n4, #n5, #n6 {
-    display: none;
-}
-
 /* News images */
 #n10 {
     background-image: url(../img/full/news/news10-640.png);
