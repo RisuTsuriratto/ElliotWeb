@@ -104,3 +104,7 @@ a.btn:hover {
 a.btn:active {
     background-color: var(--btn-active);
 }
+
+.hidden {
+    display: none;
+}
