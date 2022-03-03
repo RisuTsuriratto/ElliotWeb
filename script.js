@@ -3,20 +3,13 @@ document.addEventListener("DOMContentLoaded", function() {
     let ids = ['n1', 'n2', 'n3', 'n4', 'n5', 'n6'];
     
     expandNewsBtn.addEventListener('click', function(e) {
-        let icon = 'expand_more';
+        e.preventDefault();
         for (let card of document.getElementsByClassName('card-vl')) {
             if (ids.includes(card.id)) {
-                if (card.style.display == 'none') {
-                    card.style.display = 'block';
-                    icon = 'expand_less';
-                } else {
-                    card.style.display = 'none';
-                    icon = 'expand_more';
-                }
+                card.classList.toggle('hidden');
             }
         }
-
-        expandNewsBtn.childNodes[1].textContent = icon;
+        expandNewsBtn.childNodes[1].textContent = expandNewsBtn.childNodes[1].textContent === 'expand_more' ? 'expand_less' : 'expand_more'; 
     });
 
     // Dropdown nav.
